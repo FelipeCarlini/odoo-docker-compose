@@ -46,3 +46,7 @@ for variable in env_variables:
 env_file_path = '.env'
 for key, value in env_values.items():
     set_key(env_file_path, key, value)
+
+print("")
+print("asignar permisos directorio (root requerido)")
+os.system("sudo chmod -R 777 data/odoo-data")
